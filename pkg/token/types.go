@@ -8,7 +8,7 @@ const (
     EOF = Type("eof")
 
     // Literals
-    INT = Type("int")
+    NUMBER = Type("number")
 
     // Delimiters
     COMMA = Type(",")
@@ -29,31 +29,20 @@ const (
     MONTH = Type("month")
     YEAR = Type("year")
 
-    // Time Literals
-    MONDAY = Type("monday")
-    TUESDAY = Type("tuesday")
-    WEDNESDAY = Type("wednesday")
-    THURSDAY = Type("thursday")
-    FRIDAY = Type("friday")
-    SATURDAY = Type("saturday")
-    SUNDAY = Type("sunday")
-    JANUARY = Type("january")
-    FEBRUARY = Type("february")
-    MARCH = Type("march")
-    APRIL = Type("april")
-    MAY = Type("may")
-    JUNE = Type("june")
-    JULY = Type("july")
-    AUGUST = Type("august")
-    SEPTEMBER = Type("september")
-    OCTOBER = Type("october")
-    NOVEMBER = Type("november")
-    DECEMBER = Type("december")
+    // Time Literal
+    DAYOFWEEK = Type("dayofweek")
+    MONTHOFYEAR = Type("monthofyear")
+    SECTIONOFWEEK = Type("sectionofweek")
+
+    // Recurring time units
+    DAILY = Type("daily")
+    WEEKLY = Type("weekly")
+    MONTHLY = Type("monthly")
+    YEARLY = Type("yearly")
 
     // Ordinal suffixes
-    // They don't actually matter, but we need to account for them.
-    TH = Type("th")
     ST = Type("st")
-    RD = Type("rd")
     ND = Type("nd")
+    RD = Type("rd")
+    TH = Type("th")
 )
